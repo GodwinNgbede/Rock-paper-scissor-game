@@ -3,8 +3,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: #060654;
+  flex-wrap: nowrap;
 }
 .heading {
   display: flex;
@@ -39,4 +40,85 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.game-icons {
+  position: relative;
+}
+.game-icons img {
+  margin-top: 70px;
+  z-index: -1;
+  position: relative;
+}
+.btn-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  /* z-index: -1; */
+  transform: scale(1.5);
+  cursor: pointer;
+}
+.btn img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  transform: translateY(-70%);
+}
+.btn.paper {
+  position: absolute;
+  transform: translateX(-50);
+  top: 30px;
+  left: 80%;
+  border: 5px solid red;
+  box-shadow: 0 0 1px 5px red;
+}
+.btn.rock {
+  position: absolute;
+  transform: translateX(-50);
+  top: 30px;
+  right: 80%;
+  border: 5px solid orange;
+  box-shadow: 0 0 1px 5px orange;
+}
+.btn.scissors {
+  position: absolute;
+  transform: translateX(-50);
+  bottom: 30px;
+  border: 5px solid blue;
+  box-shadow: 0 0 1px 5px blue;
+}
+.result {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+}
+.displayResult {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.rule-btn {
+  position: absolute;
+  right: -300px;
+  cursor: pointer;
+  padding: 10px 35px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: 1px dotted aqua;
+  color: white;
+  border-radius: 7px;
+  transition: 0.5s ease-in-out;
+}
+.rule-btn:hover {
+  background-color: #2e2e84;
 }

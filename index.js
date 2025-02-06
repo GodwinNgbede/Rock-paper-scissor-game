@@ -30,11 +30,10 @@ function playGame(PlayerChoice) {
       case "scissors":
         result = computerChoice === "rock" ? `YOU WIN!!!` : `YOU LOOSE!!!`;
 
-      default:
         break;
     }
   }
-  playerEl.innerText = `PLAYER: ${PlayerChoice}`;
-  computerEl.innerText = `PLAYER: ${computerChoice}`;
-  displayEl.innerText = result;
+  playerEl.textContent = `PLAYER: ${PlayerChoice}`;
+  computerEl.textContent = `COMPUTER: ${computerChoice}`;
+  displayEl.textContent = result;
 }

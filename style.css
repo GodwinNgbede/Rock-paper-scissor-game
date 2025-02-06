@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,6 +68,10 @@ body {
   /* z-index: -1; */
   transform: scale(1.5);
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.2);
 }
 .btn img {
   width: 60%;
@@ -97,10 +102,13 @@ body {
   border: 5px solid blue;
   box-shadow: 0 0 1px 5px blue;
 }
-.result {
+.resultDiv {
   position: relative;
   margin-top: 20px;
   display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1.2rem;
 }
 .displayResult {
   color: white;
@@ -117,7 +125,7 @@ body {
   border: 1px dotted aqua;
   color: white;
   border-radius: 7px;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .rule-btn:hover {
   background-color: #2e2e84;

@@ -16,20 +16,23 @@
     </div>
     <div class="game-icons">
       <img class="triangle-icon" src="./images/bg-triangle.svg" />
+
       <div class="btn-box">
-        <button class="btn paper">
+        <button onclick="playGame()" class="btn paper">
           <img src="./images/icon-paper.svg" alt="" />
         </button>
-        <button class="btn rock">
+        <button onclick="playGame()" class="btn rock">
           <img src="./images/icon-rock.svg" alt="" />
         </button>
-        <button class="btn scissors">
+        <button onclick="playGame()" class="btn scissors">
           <img src="./images/icon-scissors.svg" alt="" />
         </button>
       </div>
     </div>
-    <div class="result">
-      <div class="displayResult">YOU WIN!!!</div>
+    <div class="resultDiv">
+      <div class="playerDisplay"></div>
+      <div class="computerDisplay"></div>
+      <div class="displayResult"></div>
       <button class="rule-btn">Rules</button>
     </div>
     <script src="index.js"></script>

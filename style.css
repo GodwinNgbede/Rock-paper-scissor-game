@@ -130,3 +130,9 @@ body {
 .rule-btn:hover {
   background-color: #2e2e84;
 }
+.winText {
+  color: rgb(13, 235, 13);
+}
+.looseText {
+  color: rgb(247, 88, 53);
+}

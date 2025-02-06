@@ -21,14 +21,14 @@ function playGame(PlayerChoice) {
   } else {
     switch (PlayerChoice) {
       case "rock":
-        result = computerChoice === "paper" ? `YOU WIN!!!` : `YOU LOOSE!!!`;
+        result = computerChoice === "paper" ? "YOU WIN!!!" : "YOU LOOSE!!!";
 
         break;
       case "Paper":
-        result = computerChoice === "scissors" ? `YOU WIN!!!` : `YOU LOOSE!!!`;
+        result = computerChoice === "scissors" ? "YOU WIN!!!" : "YOU LOOSE!!!";
         break;
       case "scissors":
-        result = computerChoice === "rock" ? `YOU WIN!!!` : `YOU LOOSE!!!`;
+        result = computerChoice === "rock" ? "YOU WIN!!!" : "YOU LOOSE!!!";
 
         break;
     }
@@ -36,4 +36,19 @@ function playGame(PlayerChoice) {
   playerEl.textContent = `PLAYER: ${PlayerChoice}`;
   computerEl.textContent = `COMPUTER: ${computerChoice}`;
   displayEl.textContent = result;
+
+  //   if (result === "YOU WIN!!!") {
+  //     displayEl.classList.add("winText");
+  //   } else if (result === "YOU LOOSE!!!") {
+  //     displayEl.classList.add("looseText");
+  //   }
+
+  switch (result) {
+    case "YOU WIN!!!":
+      displayEl.classList.add("winText");
+      break;
+    case "YOU LOOSE!!!":
+      displayEl.classList.add("looseText");
+      break;
+  }
 }
